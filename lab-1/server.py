@@ -48,7 +48,7 @@ while True:
             
         now = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
         conn.send(('Date: ' + now +'\r\n').encode())
-        conn.send('Server: IFSP Lab SD Server\r\n'.encode())
+        conn.send('Server: Lab SD Server\r\n'.encode())
         conn.send('\r\n'.encode())
         conn.shutdown(socket.SHUT_RDWR)
         conn.close()
