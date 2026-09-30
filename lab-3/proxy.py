@@ -4,7 +4,7 @@ import socket
 import sys
 
 buffer_size = 4096
-forward_to = ('ifsp.edu.br', 80)
+forward_to = ('host', 8008)
 
 class Forward:
     def __init__(self):
