@@ -8,7 +8,7 @@ PORT = 8008
 
 class EchoServer(BaseHTTPRequestHandler):
     def do_GET(self):
-        content = 'Ola IFSP'
+        content = 'Ola'
         self.send_response(200)
         self.end_headers()
         self.wfile.write(content.encode())
